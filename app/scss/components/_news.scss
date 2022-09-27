@@ -1,0 +1,24 @@
+.news {
+  padding-top: 50px;
+  @include adaptive-value("padding-bottom", 50, 40, 1);
+
+  &__title {
+    @include fz35();
+    @include adaptive-value("margin-bottom", 40, 30, 1);
+
+    @include breakpointsMaxW($bp-991) {
+      text-align: center;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    @include adaptive-value("margin-bottom", 60, 40, 1);
+
+    @include breakpointsMaxW($bp-991) {
+      grid-template-columns: 1fr;
+    }
+  }
+}

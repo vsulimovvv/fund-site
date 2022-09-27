@@ -1,0 +1,102 @@
+.photos-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &:hover {
+    .photos-card__top {
+      &::after {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    .photos-card__btn {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &__top {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    z-index: 1;
+    @include adaptive-value("margin-bottom", 20, 15, 1);
+
+    &::after {
+      @include elDef();
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(35, 35, 35, 0.7);
+      z-index: 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: 400ms ease;
+    }
+
+    img {
+      @include img(cover);
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    padding: 16px 50px 16px 20px;
+    width: auto;
+    font-size: 14px;
+    min-width: 185px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 400ms ease;
+    transition-delay: 200ms ease;
+
+    &:hover {
+      &::after {
+        background-color: var(--color-dark);
+      }
+    }
+
+    &:active {
+      transform: translate(-50%, -50%) scale(0.98);
+    }
+
+    &::after {
+      @include elDef();
+      width: 20px;
+      height: 20px;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      background-color: var(--color-white);
+      transition: 200ms ease;
+      @include maskImage(url("../images/arrow-right.png"), contain);
+    }
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__title {
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 400;
+    color: #232323;
+    margin-right: 5px;
+
+    &:hover {
+      color: var(--color-accent);
+    }
+  }
+}

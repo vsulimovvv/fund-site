@@ -1,0 +1,43 @@
+.documents {
+  @include adaptive-value("padding-bottom", 80, 50, 1);
+
+  @include breakpointsMaxW($bp-991) {
+    text-align: center;
+  }
+
+  &__title {
+    font-family: $Inter;
+    line-height: 1.3;
+    font-weight: 400;
+    color: #282828;
+    @include adaptive-value("font-size", 25, 20, 1);
+    @include adaptive-value("margin-bottom", 40, 30, 1);
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+
+    @include breakpointsMaxW($bp-991) {
+      gap: 12px;
+    }
+
+    @include breakpointsMaxW($bp-768) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .documents-item {
+    cursor: pointer;
+    height: 430px;
+    max-width: 295px;
+    width: 100%;
+    margin: 0 auto;
+    @include adaptive-value("height", 430, 235, 1);
+
+    img {
+      @include img(contain);
+    }
+  }
+}

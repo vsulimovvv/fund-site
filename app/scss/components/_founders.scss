@@ -1,0 +1,79 @@
+.founders {
+  @include adaptive-value("padding-bottom", 80, 50, 1);
+
+  @include breakpointsMaxW($bp-991) {
+    text-align: center;
+  }
+
+  &__wrapper {
+    z-index: 1;
+    position: relative;
+
+    &::after {
+      @include elDef();
+      width: 30%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: #ffe2da;
+      z-index: -1;
+
+      @include breakpointsMaxW($bp-container) {
+        width: 20%;
+      }
+
+      @include breakpointsMaxW($bp-991) {
+        display: none;
+      }
+    }
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+    align-items: center;
+    @include adaptive-value("gap", 30, 15, 1);
+
+    @include breakpointsMaxW($bp-991) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__title {
+    @include fz45();
+    @include adaptive-value("margin-bottom", 30, 20, 1);
+
+    span {
+      color: var(--color-accent);
+    }
+  }
+
+  &__left {
+    padding-right: 75px;
+    background-color: #ffe2da;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include breakpointsMaxW($bp-991) {
+      padding: 40px 30px;
+    }
+
+    @include breakpointsMaxW($bp-576) {
+      padding: 35px 22px;
+    }
+  }
+
+  &__text {
+    line-height: 1.6;
+    color: #514643;
+    @include adaptive-value("font-size", 18, 15, 1);
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @include adaptive-value("gap", 30, 15, 1);
+  }
+}

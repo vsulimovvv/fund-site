@@ -1,0 +1,43 @@
+.pagination {
+  display: flex;
+  align-items: center;
+
+  @include breakpointsMaxW($bp-991) {
+    justify-content: center;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 12px;
+    }
+  }
+
+  &__btn {
+    font-size: 17px;
+    line-height: 1;
+    width: 37px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ececec;
+    color: #8d8d8d;
+    border-radius: 5px;
+    transition: 200ms ease;
+
+    &:hover {
+      color: #9ea1b9;
+    }
+
+    &:hover,
+    &.active {
+      color: var(--color-white);
+      background-color: var(--color-accent);
+    }
+  }
+}

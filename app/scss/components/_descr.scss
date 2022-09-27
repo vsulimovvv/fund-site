@@ -1,0 +1,40 @@
+.descr {
+  @include adaptive-value("padding-top", 145, 125, 1);
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: start;
+    gap: 50px;
+
+    @include breakpointsMaxW($bp-991) {
+      grid-template-columns: 1fr;
+      text-align: center;
+      gap: 30px;
+    }
+  }
+
+  &__title {
+    font-family: $Inter;
+    text-transform: none;
+    @include fz40();
+
+    span {
+      color: var(--color-accent);
+      text-decoration: underline;
+    }
+  }
+
+  &__text {
+    max-width: 680px;
+    justify-self: end;
+    margin-top: 5px;
+    line-height: 1.8;
+    color: #717171;
+
+    @include breakpointsMaxW($bp-991) {
+      max-width: 100%;
+      justify-self: start;
+    }
+  }
+}

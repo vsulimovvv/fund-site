@@ -1,0 +1,56 @@
+// базовые подключения
+@import "reset";
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "global";
+
+// Components
+@import "./components/header";
+@import "./components/footer";
+@import "./components/menu-mobile";
+@import "./components/menu";
+@import "./components/accordion";
+@import "./components/socials";
+@import "./components/pagination";
+@import "./components/popups";
+@import "./components/hero";
+@import "./components/animation";
+@import "./components/checkbox";
+@import "./components/swiper-settings";
+
+// * ===== Custom
+@import "./components/banner";
+@import "./components/problems";
+@import "./components/descr";
+@import "./components/projects";
+@import "./components/projects-card";
+@import "./components/news";
+@import "./components/news-card";
+@import "./components/descr-news";
+@import "./components/photos";
+@import "./components/photos-card";
+@import "./components/help";
+@import "./components/help-questions";
+@import "./components/form-help";
+@import "./components/input-file";
+@import "./components/about";
+@import "./components/about-hero";
+@import "./components/mission";
+@import "./components/founders";
+@import "./components/founders-card";
+@import "./components/documents";
+@import "./components/report";
+@import "./components/form-filters";
+@import "./components/how-help";
+@import "./components/donation-block";
+@import "./components/contacts";
+@import "./components/descr-projects";
+@import "./components/side-nav";
+@import "./components/block-consultation";
+@import "./components/form-consultation";
+@import "./components/our-projects";
+@import "./components/news-slider";
+@import "./components/collected";
+@import "./components/breadcrumbs";
+@import "./components/choices";

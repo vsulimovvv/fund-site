@@ -1,0 +1,145 @@
+.footer {
+  padding-top: 40px;
+  background-color: var(--color-bg);
+
+  &__logo {
+    @include adaptive-value("width", 265, 150, 1);
+    @include adaptive-value("height", 50, 30, 1);
+  }
+
+  &__top {
+    display: grid;
+    grid-template-columns: auto minmax(auto, 550px) auto;
+    justify-content: space-between;
+    gap: 25px;
+    margin-bottom: 30px;
+
+    @include breakpointsMaxW($bp-991) {
+      grid-template-columns: auto auto;
+      align-items: center;
+    }
+
+    @include breakpointsMaxW($bp-360) {
+      gap: 20px;
+    }
+  }
+
+  &__lists {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-between;
+    gap: 25px;
+
+    @include breakpointsMaxW($bp-991) {
+      display: none;
+    }
+  }
+
+  &__phone {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-left: 85px;
+    position: relative;
+    line-height: 1;
+
+    &:hover{
+      &::after {
+        background-color: #6e9ecf;
+      }
+    }
+
+    @include breakpointsMaxW($bp-container) {
+      padding-left: 75px;
+    }
+
+    @include breakpointsMaxW($bp-768) {
+      padding-left: 0;
+    }
+
+    &::after {
+      @include elDef();
+      width: 60px;
+      height: 60px;
+      top: 0;
+      left: 0;
+      background-color: #e6e6e6;
+      transition: 200ms ease;
+      @include maskImage(url("../images/phone-big.svg"), contain);
+
+      @include breakpointsMaxW($bp-768) {
+        display: none;
+      }
+    }
+
+    &-numbers {
+      line-height: 1;
+      font-weight: 700;
+      color: #6e9ecf;
+      font-family: $Oswald;
+      @include adaptive-value("font-size", 30, 18, 1);
+      @include adaptive-value("margin-bottom", 15, 10, 1);
+    }
+
+    &-text {
+      @include adaptive-value("font-size", 15, 11, 1);
+      color: #888888;
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 7px 10px;
+    transition: 200ms ease;
+
+    &:hover {
+      color: var(--color-accent);
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #dfdfdf;
+    color: #9c9c9c;
+    @include adaptive-value("font-size", 15, 13, 1);
+    @include adaptive-value("padding-top", 25, 20, 1);
+    @include adaptive-value("padding-bottom", 25, 20, 1);
+
+    @include breakpointsMaxW($bp-991) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  &__copy {
+    margin-right: 30px;
+    line-height: 1.3;
+
+    @include breakpointsMaxW($bp-991) {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+  .company {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 15px;
+
+    span {
+      margin-right: 10px;
+    }
+
+    @include breakpointsMaxW($bp-768) {
+      justify-content: center;
+
+      img {
+        width: 140px;
+      }
+    }
+  }
+}

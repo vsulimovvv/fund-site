@@ -1,0 +1,84 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  transition: 200ms ease;
+  background-color: var(--color-white);
+  padding: 20px 0;
+
+  @include breakpointsMaxW($bp-768) {
+    padding: 15px 0;
+  }
+
+  &.scroll-header {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    padding: 15px 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    margin-right: 60px;
+
+    @include breakpointsMaxW($bp-container) {
+      margin-right: calc(15px + (60 - 15) * ((100vw - 991px) / (1270 - 991)));
+    }
+  }
+
+  &__menu {
+    margin-left: auto;
+    margin-right: 10px;
+  }
+
+  &__toggle {
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: 200ms ease-in;
+    position: relative;
+    border-radius: 3px;
+    display: none;
+
+    @include breakpointsMaxW($bp-991) {
+      display: flex;
+    }
+
+    &-line {
+      border-radius: 3px;
+      width: 100%;
+      height: 2px;
+      background-color: var(--color-accent);
+      position: relative;
+      transition: 200ms ease-in;
+
+      &::after,
+      &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        left: 0;
+        background-color: inherit;
+        transition: 200ms ease-in;
+        border-radius: 3px;
+      }
+
+      &::after {
+        top: -8px;
+      }
+
+      &::before {
+        bottom: -8px;
+      }
+    }
+  }
+}

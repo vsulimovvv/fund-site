@@ -1,0 +1,23 @@
+.projects {
+  padding-top: 50px;
+  @include adaptive-value("padding-bottom", 90, 50, 1);
+
+  &__title {
+    @include fz35();
+    margin-bottom: 40px;
+
+    @include breakpointsMaxW($bp-768) {
+      text-align: center;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @include adaptive-value("gap", 25, 15, 1);
+
+    @include breakpointsMaxW($bp-768) {
+      grid-template-columns: 1fr;
+    }
+  }
+}

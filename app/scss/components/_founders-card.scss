@@ -1,0 +1,34 @@
+.founders-card {
+  max-width: 360px;
+  width: 100%;
+  margin: 0 auto;
+
+  &__top {
+    width: 100%;
+    height: 380px;
+    @include adaptive-value("margin-bottom", 20, 15, 1);
+
+    img {
+      @include img(cover);
+    }
+
+    @include breakpointsMaxW($bp-991) {
+      height: calc(
+        170px + (380 - 170) * ((100vw - 320px) / (991 - 320))
+      );
+    }
+  }
+
+  &__title {
+    line-height: 1.3;
+    font-weight: 700;
+    color: #282828;
+    @include adaptive-value("font-size", 25, 15, 1);
+  }
+
+  &__prof {
+    line-height: 1.3;
+    color: #717171;
+    @include adaptive-value("font-size", 15, 12, 1);
+  }
+}

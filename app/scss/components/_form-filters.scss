@@ -1,0 +1,25 @@
+.form-filters {
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(auto, 235px));
+    gap: 25px;
+
+    @include breakpointsMaxW($bp-991) {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+    }
+
+    @include breakpointsMaxW($bp-768) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpointsMaxW($bp-360) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__btn{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

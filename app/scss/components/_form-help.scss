@@ -1,0 +1,58 @@
+.form-help {
+  width: 100%;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 25px;
+
+    @include breakpointsMaxW($bp-576) {
+      gap: 15px;
+    }
+  }
+
+  &__group {
+    height: 50px;
+
+    @include breakpointsMaxW($bp-576) {
+      grid-column: span 2;
+    }
+
+    &--big {
+      grid-column: span 2;
+    }
+
+    &--textarea {
+      grid-column: span 2;
+      height: 95px;
+    }
+  }
+
+  &__input {
+    line-height: 1;
+    color: #525252;
+    background-color: var(--color-white);
+    border: 1px solid #d7d7d7;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    padding: 15px 20px 13px 20px;
+
+    &:focus {
+      outline: transparent;
+      border-color: var(--color-dark);
+    }
+  }
+
+  &__bottom {
+    grid-column: span 2;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 240px;
+    gap: 20px;
+
+    @include breakpointsMaxW($bp-576) {
+      grid-template-columns: 1fr;
+    }
+  }
+}

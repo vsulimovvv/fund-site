@@ -1,0 +1,35 @@
+.about-hero {
+  color: var(--color-white);
+  position: relative;
+  z-index: 1;
+  @include background(cover);
+  @include adaptive-value("padding-top", 175, 90, 1);
+  @include adaptive-value("padding-bottom", 200, 90, 1);
+
+  &::after {
+    @include elDef();
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(97, 65, 48, 0.4);
+    z-index: -1;
+  }
+
+  &__offer {
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    @include fz40();
+    @include adaptive-value("font-size", 55, 26, 1);
+  }
+
+  &__text {
+    max-width: 650px;
+    margin: 0 auto;
+    @include adaptive-value("font-size", 25, 14, 1);
+
+  }
+}

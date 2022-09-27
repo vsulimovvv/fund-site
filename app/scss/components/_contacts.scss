@@ -1,0 +1,100 @@
+.contacts {
+  position: relative;
+  @include adaptive-value("padding-top", 60, 40, 1);
+  @include adaptive-value("padding-bottom", 175, 50, 1);
+
+  @include breakpointsMaxW($bp-991) {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  &__title {
+    @include fz35();
+    @include adaptive-value("margin-bottom", 100, 35, 1);
+
+    @include breakpointsMaxW($bp-991) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__info {
+    @include adaptive-value("margin-bottom", 35, 25, 1);
+  }
+
+  &__left {
+    width: 35%;
+
+    @include breakpointsMaxW($bp-container) {
+      width: 30%;
+    }
+
+    @include breakpointsMaxW($bp-991) {
+      margin-bottom: calc(40px + (50 - 40) * ((100vw - 320px) / (991 - 320)));
+      width: 100%;
+    }
+  }
+
+  &__text {
+    color: #2c2c2c;
+    max-width: 275px;
+    @include adaptive-value("margin-bottom", 57, 25, 1);
+
+    @include breakpointsMaxW($bp-991) {
+      max-width: 95%;
+      margin: 0 auto;
+      margin-bottom: 35px;
+    }
+  }
+
+  &__item {
+    font-size: 17px;
+
+    @include breakpointsMaxW($bp-360) {
+      font-size: 15px;
+    }
+
+    &:not(:last-child) {
+      @include adaptive-value("margin-bottom", 10, 7, 1);
+    }
+
+    a {
+      transition: 200ms;
+
+      &:hover {
+        color: var(--color-accent);
+      }
+    }
+  }
+
+  &__map {
+    position: absolute;
+    height: 100%;
+    width: 60%;
+    top: 0;
+    right: 0;
+
+    @include breakpointsMinW(1440px) {
+      width: 55%;
+    }
+
+    @include breakpointsMaxW($bp-991) {
+      position: static;
+      width: 100%;
+      height: calc(250px + (400 - 250) * ((100vw - 320px) / (991 - 320)));
+    }
+
+    @include breakpointsMaxW($bp-991) {
+      display: none;
+    }
+
+    &--mobile {
+      display: none;
+
+      @include breakpointsMaxW($bp-991) {
+        display: block;
+        height: calc(190px + (400 - 190) * ((100vw - 320px) / (991 - 320)));
+        margin-bottom: 35px;
+      }
+    }
+  }
+}

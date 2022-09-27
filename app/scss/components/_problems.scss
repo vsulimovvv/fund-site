@@ -1,0 +1,76 @@
+.problems {
+  @include adaptive-value("padding-top", 80, 50, 1);
+  @include adaptive-value("padding-bottom", 80, 50, 1);
+
+  &__top {
+    text-align: center;
+    @include adaptive-value("margin-bottom", 50, 30, 1);
+  }
+
+  &__title {
+    @include fz40();
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-size: 14px;
+    color: #615f5f;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @include adaptive-value("gap", 40, 10, 1);
+
+    @include breakpointsMaxW($bp-576) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.problems-item {
+  border: 1px solid #e7eaec;
+  background-color: var(--color-white);
+  border-radius: 10px;
+  padding: 55px;
+  text-align: center;
+  padding-top: 125px;
+  position: relative;
+  @include adaptive-value("padding-left", 55, 15, 1);
+  @include adaptive-value("padding-right", 55, 15, 1);
+  @include adaptive-value("padding-top", 125, 95, 1);
+  @include adaptive-value("padding-bottom", 55, 30, 1);
+
+  &::after {
+    @include elDef();
+    left: 50%;
+    transform: translateX(-50%);
+    @include adaptive-value("width", 56, 41, 1);
+    @include adaptive-value("height", 56, 41, 1);
+    @include adaptive-value("top", 35, 30, 1);
+  }
+
+  &--prof {
+    &::after {
+      @include backgroundImage(url("../images/tie.png"), contain);
+    }
+  }
+
+  &--housing {
+    &::after {
+      @include backgroundImage(url("../images/real-estate.png"), contain);
+    }
+  }
+
+  &--education {
+    &::after {
+      @include backgroundImage(url("../images/open-book.png"), contain);
+    }
+  }
+
+  &--family {
+    &::after {
+      @include backgroundImage(url("../images/coupe.png"), contain);
+    }
+  }
+}

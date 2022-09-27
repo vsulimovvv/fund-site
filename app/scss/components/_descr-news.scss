@@ -1,0 +1,33 @@
+.descr-news {
+  padding-top: 50px;
+  @include adaptive-value("padding-bottom", 90, 50, 1);
+
+  &__title {
+    @include fz35();
+    @include adaptive-value("margin-bottom", 40, 30, 1);
+
+    @include breakpointsMaxW($bp-991) {
+      text-align: center;
+    }
+  }
+
+  &__img {
+    @include adaptive-value("height", 425, 115, 1);
+    @include adaptive-value("margin-bottom", 55, 30, 1);
+  }
+
+  &__text {
+    line-height: 1.55;
+    color: #4f4d60;
+    max-width: 945px;
+    width: 100%;
+    margin: 0 auto;
+    @include adaptive-value("font-size", 18, 15, 1);
+
+    p {
+      &:not(:last-child) {
+        @include adaptive-value("margin-bottom", 30, 15, 1);
+      }
+    }
+  }
+}

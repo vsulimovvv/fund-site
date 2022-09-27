@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- nouislider -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css"
+/>
+
+<!-- Choices JS  -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+/>
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.8/simplebar.min.css"
+/>
+
+<!-- Custom Link -->
+<link rel="stylesheet" href="css/style.css" />
+
+<title>Фонд</title>
+
+  </head>
+
+  <body>
+    <div class="popup popup--volunteer">
+  <div class="popup__container">
+    <div class="popup__top">
+      <span class="popup__name">Стать волонтером</span>
+
+      <button class="popup__close" type="button">
+        <svg>
+          <use xlink:href="images/sprite.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="popup__body">
+      <form class="popup__form form-consultation">
+        <div class="form-consultation__group">
+          <label class="form-consultation__label" for="phone">Телефон</label>
+          <input
+            class="form-consultation__input"
+            type="tel"
+            id="phone"
+            placeholder="+7 (___) ___ - __ - __"
+          />
+        </div>
+
+        <button class="form-consultation__btn btn btn--dark" type="button">
+          Стать волонтером
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+    <div class="site-wrapper">
+      <header class="header">
+  <!-- Mobile Menu -->
+  <div class="overlay"></div>
+
+  <div class="mobile-menu">
+    <div class="mobile-menu__top">
+      <a class="mobile-menu__logo logo" href="#">
+        <img src="images/logo.png" alt="логотип" />
+      </a>
+      <button
+        class="mobile-menu__close"
+        type="button"
+        aria-label="Закрыть меню"
+      >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6 6L18 18"
+            stroke="#1a1a1a"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M18 6L6 18"
+            stroke="#1a1a1a"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <ul class="mobile-menu__list">
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Главная</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">О фонде</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Наши проекты </a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Фотоотчеты</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Как помочь</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Если вам нужна помощь</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Контакты</a>
+      </li>
+    </ul>
+
+    
+  </div>
+  <!-- Mobile Menu -->
+
+  <div class="container">
+    <nav class="header__wrapper">
+      <a class="header__logo logo" href="#">
+        <img src="images/logo.png" alt="Логотип" />
+      </a>
+
+      <div class="header__menu menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link active" href="#">Главная</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">О фонде </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Наши проекты</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Фотоотчеты</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Как помочь</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Если вам нужна помощь</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+
+      <button class="header__toggle" type="button" aria-label="Открыть меню">
+        <span class="header__toggle-line"></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+
+      <main class="main mt">
+        <section class="about-hero" style="background-image: url('images/about-hero-bg.jpg')">
+  <div class="container">
+    <div class="about-hero__offer">
+      <h1 class="about-hero__title">Миссия фонда</h1>
+      <p class="about-hero__text">
+        содействие личностному росту и самореализации детей-сирот и помощь им в
+        различных сферах жизни
+      </p>
+    </div>
+  </div>
+</section>
+
+        <section class="mission">
+  <div class="container">
+    <div class="mission__wrapper">
+      <div class="mission__left">
+        <h2 class="mission__title"><span>Задача</span> фонда</h2>
+        <div class="mission__text">
+          <p>
+            помочь детям-сиротам почувствовать себя нужными, важными,
+            полноценными членами общества. Выпускнику детского дома необходимо
+            ощущать любовь и заботу со стороны взрослых, видеть перед собой
+            пример, принимать помощь и поддержку в трудных ситуациях.
+          </p>
+
+          <p>
+            Особенность программ фонда — воспитание в детях-сиротах чувства
+            сострадания к нуждающимся людям (старикам в домах престарелых),
+            развитие добровольческих навыков, привитие идеи волонтёрства и
+            взаимопомощи.
+          </p>
+        </div>
+      </div>
+      <div class="mission__right">
+        <p>Мы стараемся содействовать тому, чтобы
+          каждый ребенок в нашей стране смог
+          реализовать свое право на жизнь
+          и воспитание в семье.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="about">
+  <div class="container">
+    <div class="about__wrapper">
+      <div class="about__left">
+        <h2 class="about__title">
+          <span>
+            В центре нашей <br />
+            работы
+          </span>
+          остаются
+        </h2>
+        <div class="about__text">
+          <p>
+            интересы ребенка и его благополучие. Мы по-прежнему движемся к
+            деинституализации, выступаем за отказ от учреждений и развитие всех
+            форм поддержки семейного воспитания детей. Чтобы максимально
+            результативно вести работу в этом направлении, мы планируем важные
+            изменения в работе фонда и появление нового вектора развития на
+            ближайшие годы.
+          </p>
+          <p>
+            В нашей работе важна открытость и прозрачность, которые лежат в
+            основе доверия, которым я очень дорожу. Поэтому мы решили
+            опубликовать на сайте стратегию развития фонда «Система Добра»:
+            чтобы как можно больше сторонников наших целей могли присоединиться
+            и вместе пройти этот путь.
+          </p>
+        </div>
+      </div>
+
+      <img class="about__img" src="images/about.jpg" alt="about" />
+    </div>
+  </div>
+</section>
+
+        <section class="founders">
+  <div class="founders__wrapper">
+    <div class="container">
+      <div class="founders__inner">
+        <div class="founders__left">
+          <h2 class="founders__title">
+            <span>ОСНОВАТЕЛИ</span> <br />
+            ФОНДА
+          </h2>
+          <div class="founders__text">
+            <p>
+              Благотворительный фонд основан в 2013 году для решения острых
+              социальных проблем в сфере защиты интересов детей-сирот и детей,
+              оставшихся без попечения родителей.
+            </p>
+          </div>
+        </div>
+
+        <ul class="founders__list">
+          <li class="founders__item">
+            <article class="founders-card">
+              <div class="founders-card__top">
+                <img src="images/founders/1.jpg" alt="founders" />
+              </div>
+              <div class="founders-card__body">
+                <h3 class="founders-card__title">Иван Иванов</h3>
+                <span class="founders-card__prof">Основатель фонда</span>
+              </div>
+            </article>
+          </li>
+          <li class="founders__item">
+            <article class="founders-card">
+              <div class="founders-card__top">
+                <img src="images/founders/2.jpg" alt="founders" />
+              </div>
+              <div class="founders-card__body">
+                <h3 class="founders-card__title">Иван Иванов</h3>
+                <span class="founders-card__prof">Основатель фонда</span>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="documents">
+  <div class="container">
+    <h2 class="documents__title">Документы фонда</h2>
+    <ul class="documents__list">
+      <li
+        class="documents-item"
+        data-fancybox="documents"
+        data-src="images/document.jpg"
+      >
+        <img src="images/document.jpg" alt="document" />
+      </li>
+      <li
+        class="documents-item"
+        data-fancybox="documents"
+        data-src="images/document.jpg"
+      >
+        <img src="images/document.jpg" alt="document" />
+      </li>
+      <li
+        class="documents-item"
+        data-fancybox="documents"
+        data-src="images/document.jpg"
+      >
+        <img src="images/document.jpg" alt="document" />
+      </li>
+      <li
+        class="documents-item"
+        data-fancybox="documents"
+        data-src="images/document.jpg"
+      >
+        <img src="images/document.jpg" alt="document" />
+      </li>
+    </ul>
+  </div>
+</section>
+
+        <section class="report">
+  <div class="container">
+    <h2 class="report__title">Отчетность по пожертвованиям</h2>
+
+    <div class="report__top">
+      <form class="report__filters form-filters">
+        <div class="form-filters__inner">
+          <select class="select" aria-label="Тип отчета">
+            <option value="">Тип отчета</option>
+            <option value="1">Тип 1</option>
+            <option value="2">Тип 2</option>
+          </select>
+
+          <select class="select" aria-label="Тип отчета">
+            <option value="">Выбрать год</option>
+            <option value="1">2022</option>
+            <option value="2">2023</option>
+            <option value="3">2024</option>
+          </select>
+          <select class="select" aria-label="Тип отчета">
+            <option value="">Выбрать месяц</option>
+            <option value="1">январь</option>
+            <option value="2">февраль</option>
+            <option value="3">март</option>
+            <option value="3">апрель</option>
+            <option value="3">май</option>
+            <option value="3">июнь</option>
+            <option value="3">июль</option>
+            <option value="3">август</option>
+            <option value="3">сентябрь</option>
+            <option value="3">октябрь</option>
+            <option value="3">ноябрь</option>
+            <option value="3">декабрь</option>
+          </select>
+
+          <button class="form-filters__btn btn" type="submit">
+            Применить фильтр
+          </button>
+        </div>
+      </form>
+
+      <ul class="report__list">
+        <li class="report__item">
+          <a class="report-btn" href="images/img-pdf-file.png" download>
+            <span class="report-btn__name">Отчет за январь</span>
+            <span class="report-btn__year">2022</span>
+          </a>
+        </li>
+        <li class="report__item">
+          <a class="report-btn" href="images/img-pdf-file.png" download>
+            <span class="report-btn__name">Отчет за февраль</span>
+            <span class="report-btn__year">2022</span>
+          </a>
+        </li>
+        <li class="report__item">
+          <a class="report-btn" href="images/img-pdf-file.png" download>
+            <span class="report-btn__name">Отчет за март</span>
+            <span class="report-btn__year">2022</span>
+          </a>
+        </li>
+        <li class="report__item">
+          <a class="report-btn" href="img/img-pdf-file.png" download>
+            <span class="report-btn__name">Отчет за апрель</span>
+            <span class="report-btn__year">2022</span>
+          </a>
+        </li>
+        <li class="report__item">
+          <a class="report-btn" href="images/img-pdf-file.png" download>
+            <span class="report-btn__name">Отчет за май</span>
+            <span class="report-btn__year">2022</span>
+          </a>
+        </li>
+        <li class="report__item">
+          <a class="report-btn" href="images/img-pdf-file.png" download>
+            <span class="report-btn__name">Отчет за июнь</span>
+            <span class="report-btn__year">2022</span>
+          </a>
+        </li>
+        <li class="report__item">
+          <a class="report-btn" href="images/img-pdf-file.png" download>
+            <span class="report-btn__name">Отчет за июль</span>
+            <span class="report-btn__year">2022</span>
+          </a>
+        </li>
+        <li class="report__item">
+          <a class="report-btn" href="images/img-pdf-file.png" download>
+            <span class="report-btn__name">Отчет за август</span>
+            <span class="report-btn__year">2022</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__col">
+        <a class="footer__logo logo" href="#">
+          <img src="images/logo.png" alt="Логотип" />
+        </a>
+      </div>
+      <div class="footer__lists">
+        <div class="footer__col">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#"> О фонде</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#"> Наши проекты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Фотоотчеты </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Как помочь</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Если вам нужна помощь </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <a class="footer__phone" href="tel:+78001234567">
+          <span class="footer__phone-numbers">8 800 123 45 67</span>
+          <span class="footer__phone-text">для помощи и волонтеров</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="footer__copy">
+        © Благотворительный фонд "Название" 2022.
+        <a href="#">
+          Политика в отношении обработки и защиты персональных данных.
+        </a>
+      </div>
+      <a class="company" href="https://razrabotka-saita.ru/" target="_blank">
+        <span>Разработка сайта</span>
+
+        <img src="images/logo-company.png" alt="АдвансМедиа" />
+      </a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- nouislider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Choices JS -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+<!-- Input Mask -->
+<script
+  src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+  type="text/javascript"
+></script>
+<!-- wNumb -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wnumb/1.2.0/wNumb.min.js"></script>
+<!-- mixitup -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.8/simplebar.min.js"></script>
+
+
+<!-- JS -->
+<script src="js/main.min.js"></script>
+
+  </body>
+</html>

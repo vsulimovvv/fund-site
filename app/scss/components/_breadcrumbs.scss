@@ -1,0 +1,45 @@
+.breadcrumbs {
+  margin-top: 110px;
+
+  @include breakpointsMaxW($bp-991) {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    position: relative;
+
+    &:not(:last-child) {
+      padding-right: 20px;
+      transition: 150ms;
+
+      &::after {
+        @include elDef();
+        width: 15px;
+        height: 15px;
+        top: 45%;
+        transform: translateY(-50%) rotate(-90deg);
+        right: 3px;
+        background-color: #afacac;
+        @include maskImage(url("../images/chevron.svg"), contain);
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    font-size: 14px;
+    position: relative;
+    transition: 200ms;
+    color: #afacac;
+
+    &:hover,
+    &.active {
+      color: #282828;
+    }
+  }
+}

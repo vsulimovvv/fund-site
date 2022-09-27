@@ -1,0 +1,47 @@
+.swiper-button-next,
+.swiper-button-prev {
+  width: 37px;
+  height: 37px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  transition: 200ms ease;
+
+  &:hover {
+    background-color: var(--color-white);
+
+    &::after {
+      background-color: var(--color-accent);
+    }
+  }
+
+  &::after {
+    @include elDef();
+    width: 90%;
+    height: 90%;
+    background-color: var(--color-white);
+    @include maskImage(url("../images/chevron.svg"), contain);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 200ms ease;
+  }
+}
+
+.swiper-button-prev {
+  &::after {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+}
+
+.swiper-pagination {
+  &-bullet {
+    width: 5px;
+    height: 5px;
+    background-color: #c7c9d7;
+    opacity: 1;
+
+    &-active {
+      background-color: #2c2c59;
+    }
+  }
+}

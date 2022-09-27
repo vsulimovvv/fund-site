@@ -1,0 +1,36 @@
+.banner {
+  color: var(--color-white);
+  @include adaptive-value("padding-bottom", 90, 50, 1);
+
+  @include breakpointsMaxW($bp-768) {
+    .container {
+      padding: 0;
+    }
+  }
+
+  &__wrapper {
+    border-radius: 10px;
+    @include background(cover);
+    @include adaptive-value("padding-top", 80, 50, 1);
+    @include adaptive-value("padding-bottom", 80, 50, 1);
+    @include adaptive-value("padding-left", 90, 25, 1);
+    @include adaptive-value("padding-right", 90, 25, 1);
+
+    @include breakpointsMaxW($bp-768) {
+      border-radius: 0;
+    }
+  }
+
+  &__title {
+    @include fz35();
+    @include adaptive-value("margin-bottom", 25, 17, 1);
+  }
+
+  &__text {
+    @include adaptive-value("margin-bottom", 40, 20, 1);
+  }
+
+  &__offer {
+    @include adaptive-value("max-width", 420, 220, 1);
+  }
+}

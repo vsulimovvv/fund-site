@@ -1,0 +1,62 @@
+<section class="help-questions">
+  <div class="container">
+    <h2 class="help-questions__title">Анкета помощи</h2>
+
+    <form class="help-questions__form form-help">
+      <div class="form-help__inner">
+        <label class="form-help__group">
+          <input class="form-help__input" type="text" placeholder="ФИО" />
+        </label>
+        <label class="form-help__group">
+          <input
+            class="form-help__input"
+            type="text"
+            placeholder="Дата рождения"
+          />
+        </label>
+        <label class="form-help__group">
+          <select class="select">
+            <option value="">Укажите кем вы являетесь</option>
+            <option value="1">Опекун</option>
+            <option value="2">Ребенок</option>
+          </select>
+        </label>
+        <label class="form-help__group">
+          <input class="form-help__input" type="text" placeholder="Ваш город" />
+        </label>
+        <label class="form-help__group form-help__group--textarea">
+          <textarea
+            class="form-help__input"
+            placeholder="Опишите Вашу проблему, какая помощь или какая сума денег требуется..."
+          ></textarea>
+        </label>
+
+        <div class="form-help__group form-help__group--big">
+          <label class="custom-file-upload" for="file-1">
+            Прикрепите файлы (выписки о задолжностях, заключения врачей и др.)
+            <span></span>
+          </label>
+          <input class="input-file-upload" id="file-1" type="file" multiple />
+        </div>
+        <div class="form-help__group form-help__group--big">
+          <label class="custom-file-upload" for="file-2">
+            Прикрепите Ваши фотографии или фото семьи, детского дома и тд.
+            <span></span>
+          </label>
+          <input class="input-file-upload" id="file-2" type="file" multiple />
+        </div>
+        <div class="form-help__bottom">
+          <label class="checkbox">
+            <input class="checkbox__input" type="checkbox" required />
+            <span class="checkbox__box"></span>
+            <span class="checkbox__text">
+              Отправляя заявку я соглашаюсь с
+              <a href="#"> политикой конфиденциальности</a>
+            </span>
+          </label>
+          <button class="form-help__btn btn" type="submit">Отправить</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>

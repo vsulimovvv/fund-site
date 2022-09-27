@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- nouislider -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css"
+/>
+
+<!-- Choices JS  -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+/>
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.8/simplebar.min.css"
+/>
+
+<!-- Custom Link -->
+<link rel="stylesheet" href="css/style.css" />
+
+<title>Фонд</title>
+
+  </head>
+
+  <body>
+    <div class="popup popup--volunteer">
+  <div class="popup__container">
+    <div class="popup__top">
+      <span class="popup__name">Стать волонтером</span>
+
+      <button class="popup__close" type="button">
+        <svg>
+          <use xlink:href="images/sprite.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="popup__body">
+      <form class="popup__form form-consultation">
+        <div class="form-consultation__group">
+          <label class="form-consultation__label" for="phone">Телефон</label>
+          <input
+            class="form-consultation__input"
+            type="tel"
+            id="phone"
+            placeholder="+7 (___) ___ - __ - __"
+          />
+        </div>
+
+        <button class="form-consultation__btn btn btn--dark" type="button">
+          Стать волонтером
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+    <div class="site-wrapper">
+      <header class="header">
+  <!-- Mobile Menu -->
+  <div class="overlay"></div>
+
+  <div class="mobile-menu">
+    <div class="mobile-menu__top">
+      <a class="mobile-menu__logo logo" href="#">
+        <img src="images/logo.png" alt="логотип" />
+      </a>
+      <button
+        class="mobile-menu__close"
+        type="button"
+        aria-label="Закрыть меню"
+      >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6 6L18 18"
+            stroke="#1a1a1a"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M18 6L6 18"
+            stroke="#1a1a1a"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <ul class="mobile-menu__list">
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Главная</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">О фонде</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Наши проекты </a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Фотоотчеты</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Как помочь</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Если вам нужна помощь</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Контакты</a>
+      </li>
+    </ul>
+
+    
+  </div>
+  <!-- Mobile Menu -->
+
+  <div class="container">
+    <nav class="header__wrapper">
+      <a class="header__logo logo" href="#">
+        <img src="images/logo.png" alt="Логотип" />
+      </a>
+
+      <div class="header__menu menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link active" href="#">Главная</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">О фонде </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Наши проекты</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Фотоотчеты</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Как помочь</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Если вам нужна помощь</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+
+      <button class="header__toggle" type="button" aria-label="Открыть меню">
+        <span class="header__toggle-line"></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+
+      <main class="main mt">
+        <section class="hero">
+  <div class="container">
+    <div class="hero__count count-badge">
+      <div class="count-badge__circle count-badge__circle--left"></div>
+      <div class="count-badge__circle count-badge__circle--top"></div>
+      <div class="count-badge__circle count-badge__circle--right"></div>
+
+      <div class="count-badge__inner">
+        <span class="count-badge__text">Более</span>
+        <span class="count-badge__number">2000</span>
+        <span class="count-badge__text fw-600">детей уже получили <br> помощь</span>
+      </div>
+    </div>
+    <div class="hero__wrapper">
+      <div class="hero__offer">
+        <h1 class="hero__title">
+          Фонд помощи <br />
+          детям-сиротам
+        </h1>
+
+        <p class="hero__text">
+          Помогаем детям-сиротам так, как должны были бы помогать родители.
+        </p>
+      </div>
+
+      <form class="hero__donation donation-block">
+        <div class="donation-block__top">
+          <button class="donation-block__btn active" type="button">
+            Ежемесячно
+          </button>
+          <button class="donation-block__btn" type="button">Разово</button>
+        </div>
+
+        <div class="donation-block__content active">
+          <p class="donation-block__text">Сумма пожертвования</p>
+
+          <div class="donation-block__sum">
+            <label class="sum-checkbox">
+              <input class="sum-checkbox__input" type="radio" name="sum" />
+              <span class="sum-checkbox__box">100 ₽</span>
+            </label>
+            <label class="sum-checkbox">
+              <input class="sum-checkbox__input" type="radio" name="sum" />
+              <span class="sum-checkbox__box">300 ₽</span>
+            </label>
+            <label class="sum-checkbox">
+              <input class="sum-checkbox__input" type="radio" name="sum" />
+              <span class="sum-checkbox__box">500 ₽</span>
+            </label>
+            <label class="sum-checkbox">
+              <input class="sum-checkbox__input" type="radio" name="sum" />
+              <span class="sum-checkbox__box">1000 ₽</span>
+            </label>
+            <label class="donation-block__label">
+              <input
+                class="donation-block__input"
+                type="text"
+                placeholder="Своя сумма"
+              />
+            </label>
+          </div>
+
+          <button class="donation-block__further btn" type="submit">
+            Далее
+          </button>
+        </div>
+        <div class="donation-block__content">
+          <p class="donation-block__text">Сумма пожертвования</p>
+
+          <div class="donation-block__sum">
+            <label class="sum-checkbox">
+              <input class="sum-checkbox__input" type="radio" name="sum" />
+              <span class="sum-checkbox__box">100 ₽</span>
+            </label>
+            <label class="sum-checkbox">
+              <input class="sum-checkbox__input" type="radio" name="sum" />
+              <span class="sum-checkbox__box">300 ₽</span>
+            </label>
+            <label class="sum-checkbox">
+              <input class="sum-checkbox__input" type="radio" name="sum" />
+              <span class="sum-checkbox__box">500 ₽</span>
+            </label>
+            <label class="sum-checkbox">
+              <input class="sum-checkbox__input" type="radio" name="sum" />
+              <span class="sum-checkbox__box">1000 ₽</span>
+            </label>
+            <label class="donation-block__label">
+              <input
+                class="donation-block__input"
+                type="text"
+                placeholder="Своя сумма"
+              />
+            </label>
+          </div>
+
+          <button class="donation-block__further btn" type="submit">
+            Далее
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+ <section class="descr">
+  <div class="container">
+    <div class="descr__wrapper">
+      <h2 class="descr__title">
+        Мы помогаем <span>детям</span>, <br />
+        а не детским домам
+      </h2>
+
+      <div class="descr__text">
+        <p>
+          Благотворительный фонд помощи детям-сиротам «Здесь и сейчас» создан в
+          2005 году людьми, которые неравнодушны к судьбе детей-сирот. Мы
+          стараемся изменить позорную для нашей страны ситуацию, когда в
+          подавляющем большинстве случаев при живых родителях для более 43 000
+          детей домом стали казенные учреждения: детские дома, дома ребенка,
+          школы-интернаты, приюты и социально-реабилитационные центры.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="collected">
+  <div class="collected__wrapper">
+    <div class="container">
+      <div class="collected__inner">
+        <div class="collected__left">
+          <h2 class="collected__title">
+            Онлайн - отчеты <br />
+            помощи
+          </h2>
+          <div class="collected__text">
+            <p>
+              В данном блоке Вы можете видеть в режиме реального времени,
+              сколько требуется и сколько уже собрано для помощи ребенка.
+            </p>
+          </div>
+        </div>
+
+        <div class="collected__content">
+          <div class="swiper-pagination"></div>
+          <div class="collected__slider swiper">
+            <ul class="collected__list swiper-wrapper">
+              <li class="collected__item swiper-slide">
+                <article class="collected-card">
+                  <div class="collected-card__img">
+                    <img src="images/collected.jpg" alt="collected" />
+                  </div>
+
+                  <div class="collected-card__info">
+                    <h3 class="collected-card__title">
+                      «Мечтаю о простой вещи: жить, как все нормальные люди»
+                    </h3>
+                    <p class="collected-card__text">
+                      Викин голос звучит бодро и уверенно, она выбирает слова и
+                      не говорит ничего лишнего. Это не скрытность, не излишняя
+                      самоуверенность или нежелание общаться, так звучит
+                      подросток, который вынужден был стать взрослым слишком
+                      рано.
+                    </p>
+
+                    <div class="sum-block">
+                      <div class="sum-block__top">
+                        <span>60%</span> от нужной суммы
+                      </div>
+
+                      <div class="sum-block__line">
+                        <span class="sum-block__line-fill"></span>
+                      </div>
+
+                      <div class="sum-block__bottom">
+                        <div class="sum-block__left">
+                          Уже собрали <span>3 000 000 ₽</span>
+                        </div>
+                        <div class="sum-block__right">
+                          Цель <span>5 000 000 ₽</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="collected__item swiper-slide">
+                <article class="collected-card">
+                  <div class="collected-card__img">
+                    <img src="images/collected.jpg" alt="collected" />
+                  </div>
+
+                  <div class="collected-card__info">
+                    <h3 class="collected-card__title">
+                      «Мечтаю о простой вещи: жить, как все нормальные люди»
+                    </h3>
+                    <p class="collected-card__text">
+                      Викин голос звучит бодро и уверенно, она выбирает слова и
+                      не говорит ничего лишнего. Это не скрытность, не излишняя
+                      самоуверенность или нежелание общаться, так звучит
+                      подросток, который вынужден был стать взрослым слишком
+                      рано.
+                    </p>
+
+                    <div class="sum-block">
+                      <div class="sum-block__top">
+                        <span>60%</span> от нужной суммы
+                      </div>
+
+                      <div class="sum-block__line">
+                        <span class="sum-block__line-fill"></span>
+                      </div>
+
+                      <div class="sum-block__bottom">
+                        <div class="sum-block__left">
+                          Уже собрали <span>3 000 000 ₽</span>
+                        </div>
+                        <div class="sum-block__right">
+                          Цель <span>5 000 000 ₽</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="collected__item swiper-slide">
+                <article class="collected-card">
+                  <div class="collected-card__img">
+                    <img src="images/collected.jpg" alt="collected" />
+                  </div>
+
+                  <div class="collected-card__info">
+                    <h3 class="collected-card__title">
+                      «Мечтаю о простой вещи: жить, как все нормальные люди»
+                    </h3>
+                    <p class="collected-card__text">
+                      Викин голос звучит бодро и уверенно, она выбирает слова и
+                      не говорит ничего лишнего. Это не скрытность, не излишняя
+                      самоуверенность или нежелание общаться, так звучит
+                      подросток, который вынужден был стать взрослым слишком
+                      рано.
+                    </p>
+
+                    <div class="sum-block">
+                      <div class="sum-block__top">
+                        <span>60%</span> от нужной суммы
+                      </div>
+
+                      <div class="sum-block__line">
+                        <span class="sum-block__line-fill"></span>
+                      </div>
+
+                      <div class="sum-block__bottom">
+                        <div class="sum-block__left">
+                          Уже собрали <span>3 000 000 ₽</span>
+                        </div>
+                        <div class="sum-block__right">
+                          Цель <span>5 000 000 ₽</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="our-projects">
+  <div
+    class="decor decor--one"
+    style="background-image: url('images/projects-decor-1.png')"
+  ></div>
+  <div
+    class="decor decor--two"
+    style="background-image: url('images/projects-decor-2.png')"
+  ></div>
+
+  <div class="container">
+    <div class="our-projects__top">
+      <h2 class="our-projects__title">Наши проекты</h2>
+      <p class="our-projects__text">
+        Все деньги, собранные в благотворительных целях используются по
+        назначею. Предлагаем Вам обзнакомиться с нашими проектами.
+      </p>
+    </div>
+    <div class="tabs-projects">
+      <ul class="tabs-projects__nav">
+        <li class="tabs-projects__nav-item">
+          <button class="tabs-projects__nav-btn" type="button">
+            Детские мероприятия
+          </button>
+        </li>
+        <li class="tabs-projects__nav-item">
+          <button class="tabs-projects__nav-btn active" type="button">
+            Адресная помощь
+          </button>
+        </li>
+        <li class="tabs-projects__nav-item">
+          <button class="tabs-projects__nav-btn" type="button">
+            Профориентация
+          </button>
+        </li>
+        <li class="tabs-projects__nav-item">
+          <button class="tabs-projects__nav-btn" type="button">
+            Наставничество
+          </button>
+        </li>
+      </ul>
+      <div class="tabs-projects__content">
+        <div class="tabs-projects__panel active">
+          <article class="projects-box">
+            <div class="projects-box__left">
+              <h3 class="projects-box__title">Детские мероприятия</h3>
+
+              <div
+                class="projects-box__slider projects-box__slider--mobile swiper"
+              >
+                <ul class="projects-box__slides swiper-wrapper">
+                  <li class="projects-box__slide swiper-slide">
+                    <img src="images/mentor.jpg" alt="mentor" />
+                  </li>
+                  <li class="projects-box__slide swiper-slide">
+                    <img src="images/mentor.jpg" alt="mentor" />
+                  </li>
+                  <li class="projects-box__slide swiper-slide">
+                    <img src="images/mentor.jpg" alt="mentor" />
+                  </li>
+                </ul>
+              </div>
+
+              <div class="projects-box__text">
+                <p>
+                  Исследования показывают, что буквально в первые полгода после
+                  выпуска многие воспитанники детдомов попадают в неприятные
+                  истории: бросают учебу, становятся жертвами мошенников,
+                  влезают в крупные долги, оказываются без работы.
+                </p>
+                <p>
+                  Вдобавок к бытовым трудностям на выпускника наваливается
+                  чувство огромного одиночества после привычной жизни в большом
+                  коллективе детдома. Зачастую подросток не справляется с
+                  переменами и оказывается в сложной жизненной ситуации.
+                </p>
+              </div>
+
+              <a class="projects-box__btn btn" href="#">Подробнее</a>
+            </div>
+            <div class="projects-box__slider swiper">
+              <ul class="projects-box__slides swiper-wrapper">
+                <li class="projects-box__slide swiper-slide">
+                  <img src="images/mentor.jpg" alt="mentor" />
+                </li>
+                <li class="projects-box__slide swiper-slide">
+                  <img src="images/mentor.jpg" alt="mentor" />
+                </li>
+                <li class="projects-box__slide swiper-slide">
+                  <img src="images/mentor.jpg" alt="mentor" />
+                </li>
+              </ul>
+
+              <button
+                class="swiper-button-next"
+                type="button"
+                aria-label="Следующий"
+              ></button>
+              <button
+                class="swiper-button-prev"
+                type="button"
+                aria-label="Предыдущий"
+              ></button>
+            </div>
+          </article>
+        </div>
+        <div class="tabs-projects__panel">
+          <article class="projects-box">
+            <div class="projects-box__left">
+              <h3 class="projects-box__title">Адресная помощь</h3>
+
+              <div
+                class="projects-box__slider projects-box__slider--mobile swiper"
+              >
+                <ul class="projects-box__slides swiper-wrapper">
+                  <li class="projects-box__slide swiper-slide">
+                    <img src="images/mentor.jpg" alt="mentor" />
+                  </li>
+                  <li class="projects-box__slide swiper-slide">
+                    <img src="images/mentor.jpg" alt="mentor" />
+                  </li>
+                  <li class="projects-box__slide swiper-slide">
+                    <img src="images/mentor.jpg" alt="mentor" />
+                  </li>
+                </ul>
+                <button
+                  class="swiper-button-next"
+                  type="button"
+                  aria-label="Следующий"
+                ></button>
+                <button
+                  class="swiper-button-prev"
+                  type="button"
+                  aria-label="Предыдущий"
+                ></button>
+              </div>
+
+              <div class="projects-box__text">
+                <p>
+                  Исследования показывают, что буквально в первые полгода после
+                  выпуска многие воспитанники детдомов попадают в неприятные
+                  истории: бросают учебу, становятся жертвами мошенников,
+                  влезают в крупные долги, оказываются без работы.
+                </p>
+                <p>
+                  Вдобавок к бытовым трудностям на выпускника наваливается
+                  чувство огромного одиночества после привычной жизни в большом
+                  коллективе детдома. Зачастую подросток не справляется с
+                  переменами и оказывается в сложной жизненной ситуации.
+                </p>
+              </div>
+
+              <a class="projects-box__btn btn" href="#">Подробнее</a>
+            </div>
+            <div class="projects-box__slider swiper">
+              <ul class="projects-box__slides swiper-wrapper">
+                <li class="projects-box__slide swiper-slide">
+                  <img src="images/mentor.jpg" alt="mentor" />
+                </li>
+                <li class="projects-box__slide swiper-slide">
+                  <img src="images/mentor.jpg" alt="mentor" />
+                </li>
+                <li class="projects-box__slide swiper-slide">
+                  <img src="images/mentor.jpg" alt="mentor" />
+                </li>
+              </ul>
+              <button
+                class="swiper-button-next"
+                type="button"
+                aria-label="Следующий"
+              ></button>
+              <button
+                class="swiper-button-prev"
+                type="button"
+                aria-label="Предыдущий"
+              ></button>
+            </div>
+          </article>
+        </div>
+        <div class="tabs-projects__panel">
+          <article class="projects-box">
+            <div class="projects-box__left">
+              <h3 class="projects-box__title">Профориентация</h3>
+
+              <div
+                class="projects-box__slider projects-box__slider--mobile swiper"
+              >
+                <ul class="projects-box__slides swiper-wrapper">
+                  <li class="projects-box__slide swiper-slide">
+                    <img src="images/mentor.jpg" alt="mentor" />
+                  </li>
+                  <li class="projects-box__slide swiper-slide">
+                    <img src="images/mentor.jpg" alt="mentor" />
+                  </li>
+                  <li class="projects-box__slide swiper-slide">
+                    <img src="images/mentor.jpg" alt="mentor" />
+                  </li>
+                </ul>
+                <button
+                  class="swiper-button-next"
+                  type="button"
+                  aria-label="Следующий"
+                ></button>
+                <button
+                  class="swiper-button-prev"
+                  type="button"
+                  aria-label="Предыдущий"
+                ></button>
+              </div>
+
+              <div class="projects-box__text">
+                <p>
+                  Исследования показывают, что буквально в первые полгода после
+                  выпуска многие воспитанники детдомов попадают в неприятные
+                  истории: бросают учебу, становятся жертвами мошенников,
+                  влезают в крупные долги, оказываются без работы.
+                </p>
+                <p>
+                  Вдобавок к бытовым трудностям на выпускника наваливается
+                  чувство огромного одиночества после привычной жизни в большом
+                  коллективе детдома. Зачастую подросток не справляется с
+                  переменами и оказывается в сложной жизненной ситуации.
+                </p>
+              </div>
+
+              <a class="projects-box__btn btn" href="#">Подробнее</a>
+            </div>
+            <div class="projects-box__slider swiper">
+              <ul class="projects-box__slides swiper-wrapper">
+                <li class="projects-box__slide swiper-slide">
+                  <img src="images/mentor.jpg" alt="mentor" />
+                </li>
+                <li class="projects-box__slide swiper-slide">
+                  <img src="images/mentor.jpg" alt="mentor" />
+                </li>
+                <li class="projects-box__slide swiper-slide">
+                  <img src="images/mentor.jpg" alt="mentor" />
+                </li>
+              </ul>
+              <button
+                class="swiper-button-next"
+                type="button"
+                aria-label="Следующий"
+              ></button>
+              <button
+                class="swiper-button-prev"
+                type="button"
+                aria-label="Предыдущий"
+              ></button>
+            </div>
+          </article>
+        </div>
+        <div class="tabs-projects__panel">
+          <article class="projects-box">
+            <div class="projects-box__left">
+              <h3 class="projects-box__title">Наставничество</h3>
+
+              <div
+                class="projects-box__slider projects-box__slider--mobile swiper"
+              >
+                <ul class="projects-box__slides swiper-wrapper">
+                  <li class="projects-box__slide swiper-slide">
+                    <img src="images/mentor.jpg" alt="mentor" />
+                  </li>
+                  <li class="projects-box__slide swiper-slide">
+                    <img src="images/mentor.jpg" alt="mentor" />
+                  </li>
+                  <li class="projects-box__slide swiper-slide">
+                    <img src="images/mentor.jpg" alt="mentor" />
+                  </li>
+                </ul>
+                <button
+                  class="swiper-button-next"
+                  type="button"
+                  aria-label="Следующий"
+                ></button>
+                <button
+                  class="swiper-button-prev"
+                  type="button"
+                  aria-label="Предыдущий"
+                ></button>
+              </div>
+
+              <div class="projects-box__text">
+                <p>
+                  Исследования показывают, что буквально в первые полгода после
+                  выпуска многие воспитанники детдомов попадают в неприятные
+                  истории: бросают учебу, становятся жертвами мошенников,
+                  влезают в крупные долги, оказываются без работы.
+                </p>
+                <p>
+                  Вдобавок к бытовым трудностям на выпускника наваливается
+                  чувство огромного одиночества после привычной жизни в большом
+                  коллективе детдома. Зачастую подросток не справляется с
+                  переменами и оказывается в сложной жизненной ситуации.
+                </p>
+              </div>
+
+              <a class="projects-box__btn btn" href="#">Подробнее</a>
+            </div>
+            <div class="projects-box__slider swiper">
+              <ul class="projects-box__slides swiper-wrapper">
+                <li class="projects-box__slide swiper-slide">
+                  <img src="images/mentor.jpg" alt="mentor" />
+                </li>
+                <li class="projects-box__slide swiper-slide">
+                  <img src="images/mentor.jpg" alt="mentor" />
+                </li>
+                <li class="projects-box__slide swiper-slide">
+                  <img src="images/mentor.jpg" alt="mentor" />
+                </li>
+              </ul>
+              <button
+                class="swiper-button-next"
+                type="button"
+                aria-label="Следующий"
+              ></button>
+              <button
+                class="swiper-button-prev"
+                type="button"
+                aria-label="Предыдущий"
+              ></button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="problems">
+  <div class="container">
+    <div class="problems__top">
+      <h2 class="problems__title">Решаем острые социальные проблемы</h2>
+      <p class="problems__text">
+        в сфере защиты интересов детей-сирот и не только
+      </p>
+    </div>
+
+    <ul class="problems__list">
+      <li class="problems-item problems-item--prof">
+        <p>
+          <b>Содействие в осознанном выборе профессии</b>, проведение
+          мастер-классов по профориентации, тестирование, психологическое
+          консультирование и тренинги (постановка целей, мотивация, финансовая
+          грамотность и др.);
+        </p>
+      </li>
+      <li class="problems-item problems-item--housing">
+        <p>
+          <b>
+            Содействие выпускникам сиротских учреждений в обустройстве,
+            собственного жилья.
+          </b>
+          Улучшение качества жизни людей, относящихся к незащищенной группе
+          населения (многодетные семьи, инвалиды, старики, матери-одиночки).
+        </p>
+      </li>
+      <li class="problems-item problems-item--education">
+        <p>
+          <b>Помощь в получении образования</b> оплата репетиторов, а также
+          дополнительного профессионального образования и необходимых для этого
+          инструментов.
+        </p>
+      </li>
+      <li class="problems-item problems-item--family">
+        <p>
+          <b>Сохранение семейных отношений между матерями,</b>
+          отбывающими срок в исправительных колониях, и их детьми, которые
+          находятся на попечении детских домов.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+        <section class="banner">
+  <div class="container">
+    <div
+      class="banner__wrapper"
+      style="background-image: url('images/banner.jpg')"
+    >
+      <div class="banner__offer">
+        <h2 class="banner__title">Нам нужна помощь</h2>
+
+        <div class="banner__text">
+          <p>
+            Если вы неравнодушны и у вас есть желание помогать тем, кто
+            нуждается в помощи, то ждем вас в нашей команде волонтеров.
+          </p>
+        </div>
+
+        <button class="banner__btn btn btn-volunteer" type="button">
+          СТАТЬ ВОЛОНТЕРОМ
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="news-slider">
+  <div class="container">
+    <div class="news-slider__top">
+      <h2 class="news-slider__title">Новости</h2>
+
+      <a class="news-slider__link" href="#"> Все новости </a>
+    </div>
+
+    <div class="news-slider__slider swiper">
+      <ul class="news-slider__slides swiper-wrapper">
+        <li class="news-slider__slide swiper-slide">
+          <article class="news-article">
+            <a class="news-article__top" href="#">
+              <img src="images/news-slider/1.jpg" alt="news" />
+            </a>
+
+            <div class="news-article__body">
+              <span class="news-article__date"> 29.04.2022 </span>
+              <h3 class="news-article__title">
+                <a class="card-link" href="#"
+                  >Дайте вещам вторую социально полезную жизнь</a
+                >
+              </h3>
+            </div>
+          </article>
+        </li>
+        <li class="news-slider__slide swiper-slide">
+          <article class="news-article">
+            <a class="news-article__top" href="#">
+              <img src="images/news-slider/2.jpg" alt="news" />
+            </a>
+
+            <div class="news-article__body">
+              <span class="news-article__date"> 29.04.2022 </span>
+              <h3 class="news-article__title">
+                <a class="card-link" href="#">
+                  Помощь эвакуированным детям в образовании
+                </a>
+              </h3>
+            </div>
+          </article>
+        </li>
+        <li class="news-slider__slide swiper-slide">
+          <article class="news-article">
+            <a class="news-article__top" href="#">
+              <img src="images/news-slider/3.jpg" alt="news" />
+            </a>
+
+            <div class="news-article__body">
+              <span class="news-article__date"> 29.04.2022 </span>
+              <h3 class="news-article__title">
+                <a class="card-link" href="#">
+                  Благодарим за участие в акции "Подари добрые перемены"
+                </a>
+              </h3>
+            </div>
+          </article>
+        </li>
+        <li class="news-slider__slide swiper-slide">
+          <article class="news-article">
+            <a class="news-article__top" href="#">
+              <img src="images/news-slider/1.jpg" alt="news" />
+            </a>
+
+            <div class="news-article__body">
+              <span class="news-article__date"> 29.04.2022 </span>
+              <h3 class="news-article__title">
+                <a class="card-link" href="#"
+                  >Дайте вещам вторую социально полезную жизнь</a
+                >
+              </h3>
+            </div>
+          </article>
+        </li>
+        <li class="news-slider__slide swiper-slide">
+          <article class="news-article">
+            <a class="news-article__top" href="#">
+              <img src="images/news-slider/2.jpg" alt="news" />
+            </a>
+
+            <div class="news-article__body">
+              <span class="news-article__date"> 29.04.2022 </span>
+              <h3 class="news-article__title">
+                <a class="card-link" href="#">
+                  Помощь эвакуированным детям в образовании
+                </a>
+              </h3>
+            </div>
+          </article>
+        </li>
+        <li class="news-slider__slide swiper-slide">
+          <article class="news-article">
+            <a class="news-article__top" href="#">
+              <img src="images/news-slider/3.jpg" alt="news" />
+            </a>
+
+            <div class="news-article__body">
+              <span class="news-article__date"> 29.04.2022 </span>
+              <h3 class="news-article__title">
+                <a class="card-link" href="#">
+                  Благодарим за участие в акции "Подари добрые перемены"
+                </a>
+              </h3>
+            </div>
+          </article>
+        </li>
+      </ul>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__col">
+        <a class="footer__logo logo" href="#">
+          <img src="images/logo.png" alt="Логотип" />
+        </a>
+      </div>
+      <div class="footer__lists">
+        <div class="footer__col">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#"> О фонде</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#"> Наши проекты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Фотоотчеты </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Как помочь</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Если вам нужна помощь </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <a class="footer__phone" href="tel:+78001234567">
+          <span class="footer__phone-numbers">8 800 123 45 67</span>
+          <span class="footer__phone-text">для помощи и волонтеров</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="footer__copy">
+        © Благотворительный фонд "Название" 2022.
+        <a href="#">
+          Политика в отношении обработки и защиты персональных данных.
+        </a>
+      </div>
+      <a class="company" href="https://razrabotka-saita.ru/" target="_blank">
+        <span>Разработка сайта</span>
+
+        <img src="images/logo-company.png" alt="АдвансМедиа" />
+      </a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- nouislider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Choices JS -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+<!-- Input Mask -->
+<script
+  src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+  type="text/javascript"
+></script>
+<!-- wNumb -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wnumb/1.2.0/wNumb.min.js"></script>
+<!-- mixitup -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.8/simplebar.min.js"></script>
+
+
+<!-- JS -->
+<script src="js/main.min.js"></script>
+
+  </body>
+</html>

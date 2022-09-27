@@ -1,0 +1,81 @@
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(15, 15, 15, 0.75);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+  }
+
+  &__container {
+    width: calc(100% - 40px);
+    max-width: 440px;
+    background-color: #fafafa;
+    transition: 250ms ease-in;
+    position: relative;
+    overflow-y: auto;
+    max-height: calc(100% - 100px);
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    @include adaptive-value("padding-left", 40, 20, 1);
+    @include adaptive-value("padding-right", 40, 20, 1);
+  }
+
+  &__name {
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+    @include adaptive-value("font-size", 25, 20, 1);
+  }
+
+  &__close {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    @include adaptive-value("right", 20, 10, 1);
+    @include adaptive-value("top", 20, 10, 1);
+
+    svg {
+      width: 100%;
+      height: 100%;
+      fill: var(--color-dark);
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #0f0f0f;
+  }
+
+  &__body,
+  &__top {
+    width: 100%;
+  }
+
+  .form-consultation {
+    width: 100%;
+
+    &__group {
+      width: 100%;
+    }
+  }
+}
