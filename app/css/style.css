@@ -5344,6 +5344,24 @@ input[type=file] {
   position: relative;
   height: 100%;
 }
+.collected .swiper-button-next,
+.collected .swiper-button-prev {
+  background-color: var(--color-white);
+}
+.collected .swiper-button-next::after,
+.collected .swiper-button-prev::after {
+  background-color: var(--color-accent);
+}
+.collected .swiper-button-next::after {
+  -webkit-transform: translate(-50%, -50%) rotate(-90deg);
+      -ms-transform: translate(-50%, -50%) rotate(-90deg);
+          transform: translate(-50%, -50%) rotate(-90deg);
+}
+.collected .swiper-button-prev::after {
+  -webkit-transform: translate(-50%, -50%) rotate(90deg);
+      -ms-transform: translate(-50%, -50%) rotate(90deg);
+          transform: translate(-50%, -50%) rotate(90deg);
+}
 .collected .swiper-pagination {
   left: 50%;
   -webkit-transform: translateX(-50%);

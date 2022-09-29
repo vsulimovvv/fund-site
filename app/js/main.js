@@ -136,6 +136,10 @@ window.addEventListener('DOMContentLoaded', () => {
           el: '.collected__content .swiper-pagination',
           clickable: true,
         },
+        navigation: {
+          nextEl: el.querySelector('.swiper-button-next'),
+          prevEl: el.querySelector('.swiper-button-prev'),
+        },
       });
     });
   })();
