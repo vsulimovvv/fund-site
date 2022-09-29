@@ -5347,6 +5347,8 @@ input[type=file] {
 .collected .swiper-button-next,
 .collected .swiper-button-prev {
   background-color: var(--color-white);
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
 }
 .collected .swiper-button-next::after,
 .collected .swiper-button-prev::after {
